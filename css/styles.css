@@ -1,0 +1,210 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* navigation menu style */
+
+@import url("https://fonts.googleapis.com/css?family=Merriweather:900&display=swap");
+:root {
+	--color-primary: #54375f;
+	--color-secondary: #F0F7EE;
+	--duration: 1s;
+	--nav-duration: calc(var(--duration) / 4);
+	--ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+	--space: 1rem;
+	--font-primary: 'Helvetica', sans-serif;
+	--font-heading: 'Merriweather', serif;
+	--font-size: 1.125rem;
+	--line-height: 1.5;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-primary);
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+}
+
+h1 {
+	margin-bottom: calc(var(--space) * 3);
+	font-family: var(--font-heading);
+	font-size: calc(var(--font-size) + 6vmin);
+	line-height: calc(var(--line-height) / 1.25);
+}
+
+.menu-toggle {
+	display: flex;
+	float: right;
+}
+
+.nav-btn {
+	padding: 0;
+	margin: 0;
+	width: 4vw;
+}
+
+.nav-icon {
+	font-size: 2vw;
+	color: purple;
+}
+
+
+/* other styles */
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.left {
+	display: flex;
+	gap: 12px;
+	float: left;
+}
+
+.bar1 {
+	fill: #70517c;
+	transition: all .4s ease;
+}
+
+.bar1:hover {
+	fill: var(--color-primary);
+}
+
+.toolTip {
+	background-color: #c8c8c8;
+	color: #70517c;
+	padding: 12px;
+	border-radius: 12px;
+	position: absolute;
+}
+
+.toolTip p {
+	padding: 0;
+	margin: 0;
+}
+
+.icons-map {
+	display: flex;
+	justify-content: center;
+	gap: 4px;
+}
+
+.icons-map .miniLine {
+	width: 8%;
+	color: white;
+	text-align: center;
+}
+
+button {
+	margin-left: 2%;
+	background-color: var(--color-primary);
+	border: none;
+	color: white !important;
+	width: 120px;
+	padding: 8px 8px;
+	margin-top: 2% !important;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.arc path {
+	stroke: #fff;
+	stroke-width: 2px;
+}
+
+.arc grid {
+	stroke: #fff;
+	stroke-width: 1;
+	stroke-dasharray: 5, 5;
+}
+
+.arc text {
+	fill: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.arc line {
+	stroke: #fff;
+}
+
+.bar {
+	fill: #5f89ad;
+}
+
+.bar:hover {
+	fill: var(--color-primary);
+}
+
+.axis {
+	font-size: 13px;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+}
+
+.label {
+	font-size: 13px;
+}
+
+#xaxis .domain {
+	fill: none;
+	stroke: #000;
+}
+
+#xaxis text,
+#yaxis text {
+	font-size: 12px;
+}
+
+.right {
+	text-align: end;
+	margin-right: 10%;
+}
+
+#time_chart {
+	transform: scale(0.7) !important;
+}
+
+#map_chart {
+	transform: scale(0.7) !important;
+}
+
+#pie_chart {
+	transform: scale(0.8) !important;
+	padding-top: 4%;
+	height: 73%;
+}
+
+.grid {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 8%;
+	margin-top: 4%;
+}
+
+#icons_map {
+	position: absolute;
+	width: 100%;
+	bottom: 12px;
+	left: 0;
+}
+
+#icons_map p {
+	margin: unset !important;
+}
+
+div.docspace {
+	margin: 35px;
+}

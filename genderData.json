@@ -1,0 +1,14 @@
+[
+	{
+		"label":"Male",
+		"gender":0,
+		"totalDeaths":284,
+		"deathsPercent":49.74
+	},
+	{
+		"label":"Female",
+		"gender":1,
+		"totalDeaths":287,
+		"deathsPercent":50.26
+	}
+]
